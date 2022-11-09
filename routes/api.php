@@ -14,7 +14,13 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+/*adding to database*/
 Route::post('stocks/add', [StockController::class, 'store']);
+
+/**getting from database */
+
+Route::get('stocks/get', [Stock2Controller::class, 'store2']);
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });

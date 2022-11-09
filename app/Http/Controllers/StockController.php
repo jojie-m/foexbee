@@ -26,6 +26,7 @@ class StockController extends Controller
         $stocks->save();
         return response()->json(['message'=>'signal added successfully'], 200);
     }
+    
 
 
 }
